@@ -39,5 +39,11 @@ $('#navbar a, .btn').on('click', function(event) {
 
 
 function sendEmail() {
-    alert("It works")
+  //get elements by id only. Forget the class
+  //Put them in template string first to and log out
+  //Then send by body
+  
+  
+ //window.location = "mailto:info@oakclinicalsolutions.com?body=Body-goes-here";
+
 }
