@@ -36,3 +36,8 @@ $('#navbar a, .btn').on('click', function(event) {
     );
   }
 });
+
+
+function sendEmail() {
+    alert("It works")
+}
