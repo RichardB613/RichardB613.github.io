@@ -32,7 +32,7 @@ p {
 }
 
 .text-primary {
-  color: #93cb52;
+  color: cornflowerblue;
 }
 
 .bg-light {
@@ -46,7 +46,7 @@ p {
 }
 
 .bg-primary {
-  background: #93cb52;
+  background: cornflowerblue;
   color: #fff;
 }
 
@@ -128,7 +128,7 @@ p {
 }
 
 #navbar ul li a:hover {
-  background: #93cb52;
+  background: cornflowerblue;
   border-radius: 5px;
 }
 
