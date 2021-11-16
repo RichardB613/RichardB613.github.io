@@ -32,7 +32,7 @@ p {
 }
 
 .text-primary {
-  color: cornflowerblue;
+  color: royalblue;
 }
 
 .bg-light {
@@ -46,7 +46,7 @@ p {
 }
 
 .bg-primary {
-  background: cornflowerblue;
+  background: royalblue;
   color: #fff;
 }
 
@@ -78,7 +78,7 @@ p {
 .btn {
   display: inline-block;
   color: #fff;
-  background: cornflowerblue;
+  background: royalblue;
   padding: 0.5rem 2rem;
   border: none;
   border-radius: 5px;
@@ -128,7 +128,7 @@ p {
 }
 
 #navbar ul li a:hover {
-  background: cornflowerblue;
+  background: royalblue;
   border-radius: 5px;
 }
 
@@ -169,7 +169,7 @@ p {
 }
 
 #what .items .item i {
-  background: cornflowerblue;
+  background: royalblue;
   padding: 1rem;
   border-radius: 50%;
   margin-bottom: 1rem;
