@@ -38,12 +38,22 @@ $('#navbar a, .btn').on('click', function(event) {
 });
 
 
-function sendEmail() {
-  //get elements by id only. Forget the class
-  //Put them in template string first to and log out
-  //Then send by body
-  
-  
- //window.location = "mailto:info@oakclinicalsolutions.com?body=Body-goes-here";
+document.querySelector('#send-mail').addEventListener('click', () => {
+  let name = document.querySelector('#name')
+  let email = document.querySelector('#email')
+  let phone = document.querySelector('#phone')
+  let message = document.querySelector('#message')
 
-}
+  if (name.value != "" && email.value != "" && phone.value != "" && message.value != "") {
+    let body = `
+      Name: ${name.value} 
+      Email: ${email.value}
+      Phone: ${phone.value}
+      Message: "${message.value} " 
+    `
+    window.location = `mailto:info@oakclinicalsolutions.com?body=${body}`;
+    name.value ="", email.value="", phone.value="", message.value=""
+  } else {
+    alert("All fields must be filled")
+  }
+})
