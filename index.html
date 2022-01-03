@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<title>Oak Clinical Solutions</title>
+	<style>
+		body{
+			background: #eee;
+		}
+		#heading {
+			color: grey;
+		}
+		#links {
+		    padding: 0rem 1rem;
+		}
+
+		.link-container {
+	    	background: #fff;
+			height: 13rem;
+			width:  80%;
+			margin: 3rem auto;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+
+		/*Oak */
+		#oak-link-content {
+			font-size: 3rem;
+			color: #CCC;
+			padding: 3rem 0.3em;
+
+		}
+		#oak-link-content span{
+			color: #806517;
+		}
+
+		/*GHPC*/
+		#gphc-link-content {
+	    	font-size: 1.7rem;
+			color: grey;
+			padding: 0.3em;	
+		    padding-top: 1rem;
+			text-align: center;
+		}
+
+		#gphc-link-content span i {
+			color: red;
+			font-size: 3rem;
+		}
+	
+
+		.footer {
+			padding: 0rem 1rem;
+			display: flex;
+		    justify-content: space-between;
+		    align-items: center;
+		    background: skyblue;
+		    color: #fff;
+		}
+		@media (min-width: 1050px){
+		    .link-container {
+		    	width: 50%;
+		    }
+		    #heading {
+		    	text-align: center;
+		    }
+		}
+	</style>
+</head>
+<body>
+	<h2 id="heading">Welcome to Oak Clinical Solutions</h2>
+	<div id="links">
+		<div class="link-container" id="oak-clinic-link">
+			<div id="oak-link-content">
+				<span><i class="fas fa-tree"></i> Oak</span>Clinic
+			</div>
+
+			<div class="footer"> 
+				<h4>For Clinical Trials</h4>
+				<i class="fas fa-chevron-right"></i>
+			</div>
+
+		</div>
+
+		<div class="link-container" id="gphc-pharmacy">
+			<div id="gphc-link-content">
+				<span><i class="fas fa-prescription-bottle-alt"></i></span>
+				<p>GPhc Pharmacy</p>
+			</div>
+
+			<div class="footer"> 
+				<h4>Visit our Pharmacy</h4>
+				<i class="fas fa-chevron-right"></i>
+			</div>
+
+		</div>	
+	</div>
+
+	<script>
+		document.getElementById('oak-clinic-link').addEventListener('click', () => {
+			window.location.href = './oak.html'
+		})
+		document.getElementById('gphc-pharmacy').addEventListener('click', () => {
+			window.location.href = './pharmacy.html'
+		})
+
+	</script>
+
+</body>
+</html>
