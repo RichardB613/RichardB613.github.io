@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align:center;
+}
+.logo {
+  font-family: sans-serif;
+}
+.text-primary {
+  color: lawngreen;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-primary {
+  background: #333;
+  color: #fff;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+
+.p-1 { padding: 1.5rem; }
+.p-2 { padding: 2rem; }
+.p-3 { padding: 3rem; }
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #333;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #7ab436;
+}
+
+.btn-dark {
+  background: lawngreen;
+  color: #fff;
+}
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #444 dotted 1px;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  position: sticky;
+  top:0;
+  background: #333;
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+  font-family: sans-serif;
+}
+
+#navbar ul li a:hover {
+  background: #333;
+  border-radius: 5px;
+}
+
+/* Showcase */
+#showcase {
+  background: #333 url('../img/showcase.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  /* Overlay */
+  position: absolute;
+  top: 80px;
+  left:0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Section: What We Do */
+#what .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#what .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#what .items .item i {
+  background: #333;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Section: Who We Are */
+#who {
+  display: flex;
+}
+
+#who div {
+  flex: 1;
+}
+
+#who .who-img {
+  background: url('../img/people.jpg') no-repeat center center/cover;
+}
+
+/* Section: Clients */
+#clients .items {
+  display: flex;
+}
+
+#clients .items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+/* Section: Contact */
+#contact {
+  display: flex;
+justify-content: space-around;
+    background: #333;
+    color: #fff;
+      padding: 3rem 0;
+}
+
+#contact .map, #contact .contact-form {
+  width: 40%;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.map {
+      display: flex;
+    justify-content: center;
+    background: #eee;
+}
+
+.services-container {
+  display: flex;
+  margin: 0 auto;
+  width: 60%;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+}
+.service {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.service h1 {
+  font-weight: 500;
+  color: darkslategrey;
+  font-family: system-ui;
+}
+.service img {
+  margin-top: 1rem;
+  border-radius: 50%;
+}
+
+#newvalue-container {
+/*  width: 60%;
+  margin: 0 auto;*/
+}
+
+.newvalue {
+  display: flex;
+  width: 100%;
+}
+
+.newvalue-text {
+    padding: 3rem;
+    width: 50%;
+    background: #333;
+    font-size: 1.4rem;
+    color: #fff;
+}
+.newvalue-text h1 {
+  color: lawngreen;
+}
+.newvalue-img {
+  width: 50%;
+  height: 22rem;
+  flex-shrink: 0;
+}
+.newvalue-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.newvalue-img h1 {
+  font-weight: 500;
+  color: darkslategrey;
+  font-family: system-ui;
+}
+
+
+#contact-home div {
+width: 100%;
+    text-align: center;
+  margin: 3rem;
+}
+
+
+
+
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+#navbar a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a:nth-child(3){
+  border-top: 1px dotted #CCC;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  /*background-color: #ddd;*/
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+#vision-container {
+  padding: 3rem;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#vision-container h1 {
+  margin-top: 1rem;
+/*  color: lawngreen;
+*/}
+#vision-container p {
+  margin-bottom: 3%;
+
+/*  color: #333;
+*/}
+
+#team-container {
+  padding: 3rem;
+  font-family: sans-serif;
+}
+
+#team-container p {
+  width: 80%;
+}
+
+#contact-info-container {
+  padding: 1rem;
+}
+.contact-items {
+  display: flex;
+}
+
+@media (max-width: 1450px){
+  .services-container {
+    width: 100%; 
+  }
+
+}
