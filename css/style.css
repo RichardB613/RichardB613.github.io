@@ -213,7 +213,7 @@ p {
 
 #contact .map, #contact .contact-form {
   width: 40%;
-  margin: 1rem;
+  margin: 1rem auto;
 }
 
 #contact .contact-form .form-group {
@@ -401,6 +401,9 @@ width: 100%;
 
 #contact-info-container {
   padding: 1rem;
+ display: flex;
+    flex-direction: column;
+    align-items: center
 }
 .contact-items {
   display: flex;
