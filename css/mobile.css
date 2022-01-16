@@ -17,7 +17,7 @@
 }
 
 /* Smartphones */
-@media(max-width: 500px) {
+@media(max-width: 900px) {
   #navbar {
     flex-direction: column;
     align-items: center;
@@ -30,6 +30,9 @@
 
   #navbar ul {
     padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   #showcase .showcase-content {
@@ -42,6 +45,27 @@
 
   #who .who-img {
     display: none;
+  }
+  .service h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .service img {
+    width: 70%;
+    height: 70%;
+  }
+  .newvalue {
+    flex-direction: column;
+  }
+  .newvalue .newvalue-img {
+    width: 100%;
+  }
+  .newvalue .newvalue-text {
+    width: 100%;
+  }
+
+  #team-content-filter p {
+    width: 100%;
   }
 
   #clients .items img {
@@ -59,6 +83,12 @@
   #contact .map {
     height: 200px;
   }
+  #contact-info-container {
+    width: 95%;
+  }
+  #contact .contact-form {
+    width: 95%;
+  }
 }
 
 @media(max-height: 568px) {
@@ -74,4 +104,5 @@
   .lead {
     font-size: 1rem;
   }
+
 }
