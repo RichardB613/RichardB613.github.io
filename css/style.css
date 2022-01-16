@@ -274,7 +274,7 @@ p {
 /* Section: Contact */
 #contact {
   display: flex;
-  height: 95vh;
+  height: 91vh;
   flex-direction: column;
  background: url(../img/contact-us.jpg) fixed center no-repeat;
   background-size: cover;
@@ -388,7 +388,7 @@ width: 100%;
 #vision-container {
   font-family: sans-serif;
   text-align: center;
-  height: 95vh;
+  height: 91vh;
   background: url(../img/vision-min.jpg) fixed center no-repeat;
   background-size: cover;
   color: black;
@@ -397,7 +397,7 @@ width: 100%;
 
 #vision-content {
   background-color: rgba(0,0,0,0.4);
-  height: 95vh;
+  height: 91vh;
   color: #fff;
   display: flex;
   flex-direction: column;
