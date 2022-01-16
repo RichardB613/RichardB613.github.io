@@ -276,7 +276,8 @@ p {
   display: flex;
   height: 95vh;
   flex-direction: column;
-  background: url(../img/contact-us.jpg);
+ background: url(../img/contact-us.jpg) fixed center no-repeat;
+  background-size: cover;
   align-items: center;
   justify-content: center;
 }
