@@ -74,7 +74,10 @@
   }
   .newvalue {
     flex-direction: column;
-  }
+  } 
+  .newvalue:nth-child(2), .newvalue:nth-child(4), .newvalue:nth-child(6)  {
+    flex-direction: column-reverse;
+  } 
   .newvalue .newvalue-img {
     width: 100%;
   }
