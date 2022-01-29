@@ -35,8 +35,19 @@
     justify-content: center;
   }
 
+  #showcase {
+    background: #333 url(../img/showcase2.jpg) no-repeat fixed center;
+    background-size: 100% 66%;
+    height: 50vh;
+  }
   #showcase .showcase-content {
-    top: 110px;
+    top: 60px;
+  }
+  #showcase .showcase-content .l-heading {
+    font-size: 3rem;
+  }
+  #showcase .showcase-content .lead {
+    font-size: 1rem;
   }
 
   #who {
@@ -97,9 +108,7 @@
     top: 140px;
   }
 
-  .l-heading {
-    font-size: 3rem;
-  }
+  
 
   .lead {
     font-size: 1rem;
