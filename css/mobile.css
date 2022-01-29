@@ -57,10 +57,17 @@
   #who .who-img {
     display: none;
   }
+  .services-container {
+    margin: 0;
+  }
+  .service {
+    width: 33%;
+  }
   .service h1 {
     font-size: 1rem;
     text-align: center;
   }
+  
   .service img {
     width: 70%;
     height: 70%;
