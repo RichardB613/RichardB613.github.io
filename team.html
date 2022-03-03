@@ -9,6 +9,26 @@
   <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
   <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
   <title>Oak Clinic | Pharmacy</title>
+  <style>
+  	#main-footer {
+
+  	}
+  	#team-header {
+  		
+  	}
+  	#team-header h1 {
+	    color: #2b4546;
+	    text-align: center;
+	    width: 100%;
+	    font-weight: 100;
+	    font-size: 4vw;
+  	}
+  	#team-header img{
+  		width: 100%;
+  		height: 100%;
+  	}
+  
+  </style>
 </head>
 <body>
 	<nav id="navbar">
@@ -25,14 +45,15 @@
 	          </button>
 	          <div class="dropdown-content">
 	            <a href="./vision.html">Our Vision</a>
-	            <a href="./vision.html">Our Values</a>
-	            <a href="./team.html">Meet The team</a>
+	            <a href="./values.html">Our Values</a>
+	            <a href="./team.html">Our Team</a>
 	          </div>
 	        </div>
 
 	      <li><a href="./index.html#services">Services</a></li>
 	      <li><a href="./pharmacy.html">Online Pharmacy</a></li>
-	      <div class="dropdown">
+
+<!-- 	      <div class="dropdown">
 	        <button class="dropbtn">Resources
 	          <i class="fa fa-caret-down"></i>
 	        </button>
@@ -40,7 +61,7 @@
 	          <a href="#">News</a>
 	          <a href="#">RSS Feed</a>
 	        </div>
-	      </div>
+	      </div> -->
 	      
 	      <li><a href="./contact.html">Contact us</a></li>
 	    </ul>
@@ -51,14 +72,33 @@
     	<div id="team-container">
     		
     		<div id="team-content-filter">
-	    		<h1>Meet the team</h1>
-	    		<p id="team-meambers-info">Founded by a group of Pharmacists, Oak Clinical Solutions Ltd was formed as a UK-based
-				Investigational Medicinal Product (IMP) manufacturing facility. The specialist team can draw on a
-				combined total of over 50 years of experience working in the NHS, Pharmaceutical Industry, Primary
-				Care, Community Pharmacy and Research & Development. Oak Clinical Solutions can provide
-				support to commercial and non-commercial Sponsors for all their clinical trial study needs</p>
+    			<div id="team-header" class="pages-header">
+    				<h1>Our Team</h1>
+    				<div id="team-header-img">
+    					<img src="./img/team.jpg">
+    				</div>
+    				
+    			</div>
+
+	    		<p id="team-meambers-info">Oak Clinical was founded by a team of specialist pharmacists with vast experience in IMP manufacturing, quality assurance, regulatory affairs, clinical trials and clinical research gained in the NHS, pharmaceutical industry and Clinical Research Organisations. Oak Clinical leverages on the teams’ considerable expertise in sourcing, packaging, labelling and
+				distribution of clinical trial supplies to collaborate with sponsors and other Clinical
+				Manufacturing Organisations to deliver IMP manufacturing support. <br><br>
 				
-				<div class="team-profiles">		
+				With access to a network of Qualified Persons, Oak Clinical can provide batch certification of
+				finished products. Our team’s background in sterile and non-sterile manufacturing,
+				formulation development and clinical trials pharmacy means we understand the challenges
+				of all aspects of IMP management and handling on-site and are in a strong position to
+				provide robust solutions to these issues. <br><br>
+
+				Our licensed facility allows patient specific doses to be dispensed and delivered direct to
+				your patients. The shared value of our founders in improving access to clinical trial
+				medicines means we are determined to provide tailored solutions to your project.
+				<br><br>
+
+
+			</p>
+				
+				<!-- <div class="team-profiles">		
 					<h4>Mr Nauman Hussain BSc (Hons), MPharm (Hons), PG Dip, IPresc</h4>
 					<div class="team-blurb">
 						<img class="team-avatar" src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" width="100" height="100"></img>
@@ -101,9 +141,42 @@
 						<img class="team-avatar" src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" width="100" height="100"></img>
 						<p>Nasir is a community-based Pharmacist with a strong interest in public health services and has held roles in General Practice surgeries. Nasir is keen to engage in research activities and understand the barriers to research within the community pharmacy. Nasir brings over a decade of experience to the team and has a proven business track record.</p>
 					</div>
-				</div>
+				</div> -->
 			</div>
     	</div>
     </section>
+
+
+<footer id="main-footer">
+    <div id="contact-home-full">
+      <div id="contact-home-left">
+        <div class="contact-home-object">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>11 New Metro Centre, Hornsey, RH3 9GB, UK</p>
+        </div>
+        <div class="contact-home-object">
+          <i class="fas fa-copyright"></i>
+          <p>Oak Clinical Solutions Ltd</p>
+        </div>
+      </div>
+
+      <div id="contact-home-right">
+        <div class="contact-home-object">
+          <i class="fas fa-mobile-alt"></i>
+          <p>+44(0)7591112223333</p>
+        </div>
+        <div class="contact-home-object">
+          <i class="fas fa-at"></i>
+          <p><a href="mailto:Info@OakClinicalSolutions.com">Info@OakClinicalSolutions.com</a></p>
+        </div>
+        <div class="contact-home-object">
+          <i class="fas fa-copyright"></i>
+          <p><a href="https://www.linkedin.com/company/oakclinical">Stay Connected</a></p>
+        </div>
+          
+      </div>
+
+    </div>
+  </footer>
 </body>
 </html>

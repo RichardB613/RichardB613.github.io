@@ -16,6 +16,12 @@
   margin-bottom: 0;
 }
 
+@media(max-width: 1500px) {
+  #team-header {
+    height: 40%;
+  }
+}
+
 /* Smartphones */
 @media(max-width: 900px) {
   #navbar {
@@ -39,17 +45,18 @@
     background: #333 url(../img/showcase2.jpg) no-repeat fixed center;
     background-size: 100% 66%;
     height: 50vh;
+    margin: 0;
+
   }
   #showcase .showcase-content {
-    top: 60px;
+    padding-top: 0;
   }
   #showcase .showcase-content .l-heading {
-    font-size: 3rem;
+    font-size: 6vw;
   }
   #showcase .showcase-content .lead {
-    font-size: 1rem;
+    font-size: 3vw;
   }
-
   #who {
     display: block;
   }
@@ -67,14 +74,13 @@
     font-size: 1rem;
     text-align: center;
   }
-  
   .service img {
     width: 70%;
     height: 70%;
   }
   .newvalue {
     flex-direction: column;
-  } 
+  }
   .newvalue:nth-child(2), .newvalue:nth-child(4), .newvalue:nth-child(6)  {
     flex-direction: column-reverse;
   } 
@@ -109,6 +115,17 @@
   }
   #contact .contact-form {
     width: 95%;
+  }
+  #contact-home-full {
+    flex-direction: column;
+    padding: 0 1rem;
+
+  }
+  .contact-home-object {
+    justify-content: center;
+  }
+  #team-header h1 {
+    font-size: 7vw !important;
   }
 }
 

@@ -13,6 +13,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 p {
@@ -54,10 +55,17 @@ p {
 }
 
 .l-heading {
-  font-size: 4rem;
+  font-size: 4vw;
   margin-bottom: 0.75rem;
   line-height: 1.1;
   font-weight: 100;
+}
+.pages-header {
+  color: #2b4546;
+  text-align: center;
+  width: 100%;
+  font-weight: 100;
+  font-size: 4vw;
 }
 
 .m-heading {
@@ -67,7 +75,7 @@ p {
 }
 
 .lead {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   margin-bottom: 2rem;
 }
 
@@ -116,7 +124,9 @@ p {
   color: #333;
   justify-content: space-between;
   z-index: 1;
-  box-shadow: 0px 1px 34px darkslategrey;
+  padding: 0 11%;
+  /*box-shadow: 0px 1px 34px darkslategrey;*/
+  box-shadow: 0 4px 20px -2px gray
 }
 
 #navbar ul {
@@ -206,9 +216,11 @@ p {
 
 /* Showcase */
 #showcase {
-  background: #333 url('../img/showcase2.jpg') no-repeat center center/cover;
-  height: 100vh;
-  color: #2b4546;
+    background: #333 url(../img/showcase2.jpg) no-repeat center center/cover;
+    height: 50vh;
+    /* width: 50%; */
+    color: #2b4546;
+    margin: 0 11%;
 }
 
 #showcase .showcase-content {
@@ -217,14 +229,15 @@ p {
   text-align: center;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 50vh;
   padding: 0 2rem;
-  /* Overlay */
-  position: absolute;
-  top: 80px;
-  left:0;
+  margin-left: 5rem;
+  padding-top: 5rem;
+/*  position: absolute;
+  top: -103px;
+  left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0;*/
   /*background-color: rgba(0,0,0,0.4);*/
 }
 
@@ -273,24 +286,42 @@ p {
 
 /* Section: Contact */
 #contact {
-  display: flex;
+/*  display: flex;
   height: 91vh;
   flex-direction: column;
-  background: url(../img/contact-us.jpg) fixed center no-repeat;
-  background-size: cover;
+  background: #fff;
   align-items: center;
-  justify-content: center;
+  justify-content: center;*/
+  margin: 1rem 4rem;
+}
+
+#contact-info-container {
+/*  padding: 1rem;
+display: flex;
+    flex-direction: column;
+    align-items: center;
+  background: gray;
+  color: #fff;
+    margin: 0rem auto;
+    padding: 1rem 0rem;
+    width: 40%;*/
+}
+.contact-items {
+  display: flex;
+}
+.contact-items a {
+  color: black;
 }
 
 #contact .map, #contact .contact-form {
-  width: 40%;
+/*  width: 40%;
   margin: 0rem auto;
   background: gray;
-  padding-bottom: 2rem;
+  padding-bottom: 2rem;*/
 }
 
 #contact .contact-form .form-group {
-  margin: 0.75rem;
+  margin: 0.75rem 0;
 }
 
 #contact .contact-form label {
@@ -302,14 +333,22 @@ p {
 #contact .contact-form textarea {
   width: 100%;
   padding: 0.5rem;
+  border: 1px solid #ccc;
 }
 
+
+#send-mail {
+  width: 10% !important;
+}
 .map {
       display: flex;
     justify-content: center;
     background: #eee;
 }
 
+
+
+/*Services */
 .services-container {
   display: flex;
   margin: 1.5rem auto;
@@ -375,11 +414,26 @@ p {
 }
 
 
-#contact-home div {
-width: 100%;
-  padding: 3rem;
+#contact-home {
+
+}
+#contact-home-full {
+  color: #fff;
+  background: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 8px solid limegreen;
 }
 
+.contact-home-object {
+  display: flex;
+  align-items: center;
+}
+
+.contact-home-object i {
+  margin-right: 1rem;
+}
 
 
 
@@ -387,51 +441,56 @@ width: 100%;
 
 #vision-container {
   font-family: sans-serif;
-  text-align: center;
-  height: 91vh;
-  background: url(../img/vision-min.jpg) fixed center no-repeat;
-  background-size: cover;
   color: black;
   font-size: 1.2rem;
+  margin-top: 2rem;
 }
 
 #vision-content {
-  background-color: rgba(0,0,0,0.4);
-  height: 91vh;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
+  margin: 0 11%;
+
 }
 
 #vision-content h1 {
 }
-
-#vision-content p {
-  margin-bottom: 3%;
+#vision-image-container {
+  position: relative;
+}
+#vision-image-container #vision-content-text {
+  position: absolute;
+  top: 0;
+  margin-left: 63%;
+  margin-top: 10%;
+  font-style: italic;
+  color: #fff;
+  font-size: 1.5vw;
 }
 
-
+#vision-img img {
+  width: 100%;
+  height: 100%;
+}
 
 #team-container {
   
   font-family: sans-serif;
-  background: url(../img/team-min.jpg) fixed center no-repeat;
+/*  background: url(../img/team-min.jpg) fixed center no-repeat;
   background-size: cover;
-  color: #fff;
+  color: #fff;*/
 }
 
 #team-content-filter {
-  padding: 3rem;
-  color: #fff;
-  background-color: rgba(0,0,0,0.6);
+  margin: 1rem 11%;
+
+
+/*  color: #fff;
+  background-color: rgba(0,0,0,0.6);*/
 }
 
 #team-content-filter p {
-  width: 70%;
-  margin-top: 0rem;
+  margin-top: 1rem;
+  color: #333;
+
 }
 
 #team-meambers-info {
@@ -447,20 +506,7 @@ width: 100%;
   margin-bottom: 2rem;
 }
 
-#contact-info-container {
-  padding: 1rem;
-display: flex;
-    flex-direction: column;
-    align-items: center;
-  background: gray;
-  color: #fff;
-    margin: 0rem auto;
-    padding: 1rem 0rem;
-    width: 40%;
-}
-.contact-items {
-  display: flex;
-}
+
 
 @media (max-width: 1450px){
   .services-container {

@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="css/pharmacy.css">
     <title>GPHC PHARMACY</title>
     <style>
-    	body {
+/*    	body {
     		background: #f2f5fc;
-    	}
+    	}*/
     	#top {
     		padding-top: 4rem;
     	}
@@ -140,11 +140,21 @@
     			margin: auto;
 		    }
 		}
+		#temporary-container {
+		    font-family: sans-serif;
+		    text-align: center;
+		    height: 100vh;
+		    background: url(./img/online-pharmacy-soon.jpg) fixed center no-repeat;
+		    background-size: cover;
+		    color: black;
+		    font-size: 1.2rem;
+		}
     </style>
 </head>
 <body>
-	<!-- Navbar -->
-    <nav class="navbar">
+	<div id="temporary-container"></div>
+
+<!--     <nav class="navbar">
         <div class="navbar-container container">
             <input type="checkbox" name="" id="">
             <div class="hamburger-lines">
@@ -166,14 +176,12 @@
 
     <div id="sections">
 
-	    <!-- Top -->
 	    <section id="top">
 	       	<div id="banner">
 				<img src="https://st3.depositphotos.com/1258191/17023/i/600/depositphotos_170238576-stock-photo-confident-doctor-with-arms-crossed.jpg" width="100%" height="200">
 			</div>	
 	    </section>
 
-	   <!-- Options -->
 	   <section id="options">
 	   		<div id="options-header">
 	   			<h1>Prescriptions in a few <h1>
@@ -232,7 +240,6 @@
 	   		<button>View More Treatements</button>
 	   </section>
 
-	   <!-- Pharmacists -->
 	   <section id="pharmacists">
 	   		<h1>Our Qualified Team</h1>
 	   		<p>Our doctors are UK based and are registerd with the General Pharmaceutical Council(GPhc)</p>
@@ -276,13 +283,11 @@
 	   		</div>
 	   </section>
 
-	   <!-- Video -->
 	   <section id="video">
 	   		<h1>Watch our video</h1>
 	   		<iframe width="100%" height="315" src="https://www.youtube.com/embed/fVYZfhmCBKw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	   </section>
 
-	   <!-- About -->
 	   <section id="about">
 	   		<h4>Learn About Us Today <i class="fas fa-arrow-right"></i> </h4>
 	   </section>
@@ -291,6 +296,6 @@
    		document.getElementById('about').addEventListener('click', () => {
 			window.location.href = './about.html'
 		})
-   </script>
+   </script> -->
 </body>
 </html>
