@@ -292,7 +292,9 @@ p {
   background: #fff;
   align-items: center;
   justify-content: center;*/
-  margin: 1rem 4rem;
+  margin: 2% 25%;
+  padding: 1rem;
+  box-shadow: 1px 1px 3px 0px lawngreen, -1px -1px 3px 0px lawngreen;
 }
 
 #contact-info-container {
@@ -321,7 +323,10 @@ display: flex;
 }
 
 #contact .contact-form .form-group {
-  margin: 0.75rem 0;
+  margin: 1% 0;
+}
+#message {
+  height: 5rem;
 }
 
 #contact .contact-form label {
@@ -334,11 +339,14 @@ display: flex;
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #ccc;
+  font-family: inherit;
 }
 
 
 #send-mail {
   width: 10% !important;
+  background: #7ab436;
+  margin: 1% 0;
 }
 .map {
       display: flex;
@@ -362,7 +370,7 @@ display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1rem 0;
+  margin: 4% 0;
 }
 .service h1 {
   font-weight: 500;
@@ -443,7 +451,7 @@ display: flex;
   font-family: sans-serif;
   color: black;
   font-size: 1.2rem;
-  margin-top: 2rem;
+  margin-top: 1%;
 }
 
 #vision-content {
@@ -496,6 +504,7 @@ display: flex;
 #team-meambers-info {
   margin-bottom: 3rem;
   font-weight: bold;
+  font-size: 1.3rem;
 }
 .team-avatar {
   margin-right: 1rem;

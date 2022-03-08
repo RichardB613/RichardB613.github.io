@@ -15,6 +15,10 @@
       width: 100%;
       bottom: 0;
     }
+    #terms-chkbox {
+    	width: initial !important; 
+    	margin-left: .3rem;
+    }
   </style>
 </head>
 <body>
@@ -81,6 +85,12 @@
 	          <label for="message">Message</label>
 	          <textarea name="message" id="message" placeholder="Enter Message"></textarea>
 	        </div>
+	        <div>
+	        	<p style="display: inline-block;">By checking the box, you agree to the terms of Oak Clinical Solutions</p>
+	        	<input id="terms-chkbox" type="checkbox">
+	        	
+	        </div>
+	        
 	        <input type="submit" value="Send" class="btn btn-dark" id="send-mail">
 	      </form>
 	    </div>
@@ -112,7 +122,7 @@
           <p><a href="mailto:Info@OakClinicalSolutions.com">Info@OakClinicalSolutions.com</a></p>
         </div>
         <div class="contact-home-object">
-          <i class="fas fa-copyright"></i>
+          <i class="fab fa-linkedin"></i>
           <p><a href="https://www.linkedin.com/company/oakclinical">Stay Connected</a></p>
         </div>
           
@@ -124,25 +134,38 @@
 
    <!-- Local JS File -->
   <script>
-  document.querySelector('#send-mail').addEventListener('click', () => {
-  let name = document.querySelector('#name')
-  let email = document.querySelector('#email')
-  let phone = document.querySelector('#phone')
-  let message = document.querySelector('#message')
+		const sendButton = document.querySelector('#send-mail')
+		const checkBox = document.getElementById('terms-chkbox')
+		sendButton.disabled = true;
+	  sendButton.addEventListener('click', () => {
+		  let name = document.querySelector('#name')
+		  let email = document.querySelector('#email')
+		  let phone = document.querySelector('#phone')
+		  let message = document.querySelector('#message')
 
-  if (name.value != "" && email.value != "" && phone.value != "" && message.value != "") {
-    let body = `
-      Name: ${name.value} 
-      Email: ${email.value}
-      Phone: ${phone.value}
-      Message: "${message.value} " 
-    `
-    window.location = `mailto:info@oakclinicalsolutions.com?body=${body}`;
-    name.value ="", email.value="", phone.value="", message.value=""
-  } else {
-    alert("All fields must be filled")
-  }
-})
+		  if (name.value != "" && email.value != "" && phone.value != "" && message.value != "") {
+		    let body = `
+		      Name: ${name.value} 
+		      Email: ${email.value}
+		      Phone: ${phone.value}
+		      Message: "${message.value} " 
+		    `
+		    window.location = `mailto:info@oakclinicalsolutions.com?body=${body}`;
+		    name.value ="", email.value="", phone.value="", message.value=""
+		  } else {
+		    alert("All fields must be filled")
+		  }
+		})
+
+		checkBox.addEventListener('change', () => {
+			if (sendButton.disabled == true) {
+				sendButton.disabled = false;
+				sendButton.style.background = 'lawngreen'
+			} else {
+				sendButton.disabled = true;
+				sendButton.style.background = 'grey'
+			}
+		})
 
   </script>
 </body>
