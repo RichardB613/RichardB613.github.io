@@ -78,6 +78,10 @@
 	          <input type="email" name="email" id="email" placeholder="Enter Email">
 	        </div>
 	        <div class="form-group">
+	          <label for="company-name">Email</label>
+	          <input type="company-name" name="company-name" id="company-name" placeholder="Enter Company/Organisation name">
+	        </div>
+	        <div class="form-group">
 	          <label for="phone">Phone Number</label>
 	          <input type="number" name="phone" id="phone" placeholder="Enter Phone Number">
 	        </div>
@@ -85,11 +89,11 @@
 	          <label for="message">Message</label>
 	          <textarea name="message" id="message" placeholder="Enter Message"></textarea>
 	        </div>
-	        <div>
+<!-- 	        <div>
 	        	<p style="display: inline-block;">By checking the box, you agree to the terms of Oak Clinical Solutions</p>
 	        	<input id="terms-chkbox" type="checkbox">
 	        	
-	        </div>
+	        </div> -->
 	        
 	        <input type="submit" value="Send" class="btn btn-dark" id="send-mail">
 	      </form>
@@ -135,36 +139,26 @@
    <!-- Local JS File -->
   <script>
 		const sendButton = document.querySelector('#send-mail')
-		const checkBox = document.getElementById('terms-chkbox')
-		sendButton.disabled = true;
 	  sendButton.addEventListener('click', () => {
 		  let name = document.querySelector('#name')
 		  let email = document.querySelector('#email')
 		  let phone = document.querySelector('#phone')
 		  let message = document.querySelector('#message')
+		  let companyName = document.querySelector('#company-name')
 
-		  if (name.value != "" && email.value != "" && phone.value != "" && message.value != "") {
+		  if (name.value != "" && email.value != "" && phone.value != "" && message.value != "" && companyName.value != "") {
 		    let body = `
 		      Name: ${name.value} 
 		      Email: ${email.value}
 		      Phone: ${phone.value}
+		      Organisation: ${companyName.value}
 		      Message: "${message.value} " 
 		    `
 		    window.location = `mailto:info@oakclinicalsolutions.com?body=${body}`;
-		    name.value ="", email.value="", phone.value="", message.value=""
+		    name.value = "", email.value="", phone.value="", message.value="", companyName.value = ""
 		  } else {
 		    alert("All fields must be filled")
 		  }
-		})
-
-		checkBox.addEventListener('change', () => {
-			if (sendButton.disabled == true) {
-				sendButton.disabled = false;
-				sendButton.style.background = 'lawngreen'
-			} else {
-				sendButton.disabled = true;
-				sendButton.style.background = 'grey'
-			}
 		})
 
   </script>
