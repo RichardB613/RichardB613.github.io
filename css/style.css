@@ -304,6 +304,7 @@ p {
 }
 
 #contact-info-container {
+  text-align: center;
 /*  padding: 1rem;
 display: flex;
     flex-direction: column;
@@ -316,6 +317,7 @@ display: flex;
 }
 .contact-items {
   display: flex;
+  justify-content: center;
 }
 .contact-items a {
   color: black;
