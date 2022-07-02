@@ -10,17 +10,57 @@
   <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
   <title>Oak Clinic | Pharmacy</title>
   <style>
-    #main-footer {
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-      font-size: .8rem;
+
+    #vision-content {
+      margin: 1% 11%;
     }
-/*    #vision-img {
-      height: 70vh;
-    }*/
-    #navbar {
-      height: 10vh;
+
+    #vision-content h1 {
+    }
+    #vision-image-container {
+      position: relative;
+    }
+    #vision-image-container #vision-content-text {
+      position: absolute;
+      top: 0;
+      margin-left: 63%;
+      margin-top: 10%;
+      margin-right: 2%;
+      font-style: italic;
+      color: #fff;
+      font-size: 1.5vw;
+    }
+    #vision-content-text p {
+      text-align: justify;
+    }
+
+    #vision-img img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media(max-width: 900px) {
+    /*Vision*/
+      #vision-content h1 {
+          text-align: center;
+      }
+      #vision-content {
+        margin: 1%;
+      }
+      #vision-img {
+        height: 29rem;
+      }
+      #vision-image-container #vision-content-text {
+        margin-left: initial; 
+        margin-top: initial; 
+        margin-right:initial; 
+        font-style: initial;
+        color: #fff;
+        font-size: 1.3rem;
+        padding: 0 1rem;
+        /*font-weight: bold;*/
+      }
+
     }
 
   </style>
@@ -46,30 +86,26 @@
         </div>
 
       <li><a href="./index.html#services">Services</a></li>
-      <li><a href="./pharmacy.html">Online Pharmacy</a></li>      
       <li><a href="./contact.html">Contact us</a></li>
     </ul>
   </nav>
 
   
 
-  <section>
-  	<div id="vision-container">
-      <div id="vision-content">
+  <section id="vision-content">
+    <div id="vision-image-container">
+      
 
-        <div id="vision-image-container">
-          <div id="vision-img">
-            <img src="./img/vision.jpg">
-          </div>
-
-          <div id="vision-content-text">
-            <h1>Our Vision</h1>
-            <p>
-            “To be a leading provider of innovative research solutions transforming global healthcare for the future. At Oak, our team of experts work in partnership with you to support your organisation in delivering its research priorities using our extensive commercial capabilities. We envisage a future of equitable access to high quality clinical research.”</p>
-          </div>
-        </div>
+      <div id="vision-content-text">
+        <h1>Our Vision</h1>
+        <p>
+        “To be a leading provider of innovative research solutions transforming global healthcare for the future. At Oak, our team of experts work in partnership with you to support your organisation in delivering its research priorities using our extensive commercial capabilities. We envisage a future of equitable access to high quality clinical research.”</p>
       </div>
-  	</div>	
+      <div id="vision-img">
+        <img src="./img/vision.jpg">
+      </div>
+    </div>
+
   </section>
 
 <footer id="main-footer">
@@ -88,7 +124,7 @@
       <div id="contact-home-right">
         <div class="contact-home-object">
           <i class="fas fa-mobile-alt"></i>
-          <p>+44(0)759112233</p>
+          <p>0203 576 0350</p>
         </div>
         <div class="contact-home-object">
           <i class="fas fa-at"></i>
@@ -96,7 +132,7 @@
         </div>
         <div class="contact-home-object">
           <i class="fab fa-linkedin"></i>
-          <p><a href="https://www.linkedin.com/company/oakclinical">Stay Connected</a></p>
+          <p><a href="https://www.linkedin.com/company/oak-clinical-solutions-ltd/about/?viewAsMember=true">Stay Connected</a></p>
         </div> 
       </div>
     </div>

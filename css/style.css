@@ -9,6 +9,7 @@
 body {
   font-family: sans-serif;
   line-height: 1.4;
+  width: 100%;
 }
 
 a {
@@ -64,8 +65,7 @@ p {
   color: #2b4546;
   text-align: center;
   width: 100%;
-  font-weight: 100;
-  font-size: 4vw;
+  padding: 1rem 0;
 }
 
 .m-heading {
@@ -236,15 +236,16 @@ p {
   top: 0;
   left: 0;
   width: 100%;
+  height: 65vh;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
   padding: 0 2rem;
-  margin-left: 5rem;
+  padding-left: 5rem;
   padding-top: 5rem;
-  height: 65vh;
+  
 }
 
 /* Section: What We Do */
@@ -331,9 +332,7 @@ display: flex;
   padding-bottom: 2rem;*/
 }
 
-#contact .contact-form .form-group {
-  margin: 1% 0;
-}
+
 #message {
   height: 5rem;
   width: 90% !important;
@@ -354,7 +353,7 @@ display: flex;
 
 
 #send-mail {
-  width: 10% !important;
+  width: 10%;
   background: #7ab436;
   margin: 1% 0;
 }
@@ -381,6 +380,7 @@ display: flex;
   justify-content: center;
   align-items: center;
   margin: 4% 0;
+  margin-right: 3%;
 }
 .service h1 {
   color: darkslategrey;
@@ -398,6 +398,7 @@ display: flex;
 .newvalue {
   display: flex;
   width: 100%;
+  height: 22rem;
 }
 
 .newvalue-text {
@@ -418,7 +419,6 @@ display: flex;
 }
 .newvalue-img {
   width: 50%;
-  height: 22rem;
   flex-shrink: 0;
 }
 .newvalue-img img{
@@ -458,41 +458,6 @@ display: flex;
 
 
 
-#vision-container {
-  font-family: sans-serif;
-  color: black;
-  font-size: 1.2rem;
-  margin-top: 1%;
-}
-
-#vision-content {
-  margin: 0 11%;
-
-}
-
-#vision-content h1 {
-}
-#vision-image-container {
-  position: relative;
-}
-#vision-image-container #vision-content-text {
-  position: absolute;
-  top: 0;
-  margin-left: 63%;
-  margin-top: 10%;
-  margin-right: 2%;
-  font-style: italic;
-  color: #fff;
-  font-size: 1.5vw;
-}
-#vision-content-text p {
-  text-align: justify;
-}
-
-#vision-img img {
-  width: 100%;
-  height: 100%;
-}
 
 #team-container {
   

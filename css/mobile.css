@@ -68,7 +68,7 @@
     margin: 0;
   }
   .service {
-    width: 33%;
+    width: 47%;
   }
   .service h1 {
     font-size: 1rem;
@@ -80,12 +80,14 @@
   }
   .newvalue {
     flex-direction: column;
+    height: initial;
   }
   .newvalue:nth-child(2), .newvalue:nth-child(4), .newvalue:nth-child(6)  {
     flex-direction: column-reverse;
   } 
   .newvalue .newvalue-img {
     width: 100%;
+    height: 22rem;
   }
   .newvalue .newvalue-text {
     width: 100%;
@@ -104,7 +106,7 @@
   }
 
   #contact {
-    flex-direction: column;
+    margin: 0;
   }
 
   #contact .map {
@@ -127,12 +129,15 @@
   #team-header h1 {
     font-size: 7vw !important;
   }
+  #send-mail {
+    width: initial;
+  }
 }
 
 @media(max-height: 568px) {
   #showcase .showcase-content {
-    margin-top: -2rem;
-    top: 140px;
+/*    margin-top: -2rem;
+    top: 140px;*/
   }
 
   

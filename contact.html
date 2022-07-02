@@ -11,7 +11,6 @@
   <title>Oak Clinic | Pharmacy</title>
   <style>
     #main-footer {
-      position: absolute;
       width: 100%;
       bottom: 0;
     }
@@ -22,6 +21,9 @@
     .contact-form form {
     	position: relative;
     }
+    #contact .contact-form .field {
+		  margin: 1% 0;
+		}
     #contact-logo {
 	    position: absolute;
 	    width: 38%;
@@ -54,18 +56,7 @@
 	          </div>
 	        </div>
 
-	      <li><a href="./index.html#services">Services</a></li>
-	      <li><a href="./pharmacy.html">Online Pharmacy</a></li>
-<!-- 	      <div class="dropdown">
-	        <button class="dropbtn">Resources
-	          <i class="fa fa-caret-down"></i>
-	        </button>
-	        <div class="dropdown-content">
-	          <a href="#">News</a>
-	          <a href="#">RSS Feed</a>
-	        </div>
-	      </div> -->
-	     
+	      <li><a href="./index.html#services">Services</a></li>	     
 	      <li><a href="#contact">Contact us</a></li>
 	    </ul>
     </nav>
@@ -78,34 +69,45 @@
  	    <div id="contact-info-container">
 	      <h1>Contact Us</h1>
 	      <p style="font-weight: bold;">Oak Clinical Solutions Ltd<br> 
+	      <div class="contact-items"><h4>Phone: </h4>0203 576 0350</div>
 	      <div class="contact-items"><h4>Email: </h4> <a href="mailto:Info@OakClinicalSolutions.com">Info@OakClinicalSolutions.com</a></div>
 	    </div>
+
+	    <!-- Contact Form container -->
 	    <div class="contact-form">
-	      <form>
-	      	<div id="contact-logo"><img src="./img/contact-logo.jpg"></div>
-	        <div class="form-group">
-	          <label for="name">Name</label>
-	          <input type="text" name="name" id="name" placeholder="Enter Name">
-	        </div>
-	        <div class="form-group">
-	          <label for="email">Email</label>
-	          <input type="email" name="email" id="email" placeholder="Enter Email">
-	        </div>
-	        <div class="form-group">
-	          <label for="company-name">Email</label>
-	          <input type="company-name" name="company-name" id="company-name" placeholder="Enter Company/Organisation name">
-	        </div>
-	        <div class="form-group">
-	          <label for="phone">Phone Number</label>
-	          <input type="number" name="phone" id="phone" placeholder="Enter Phone Number">
-	        </div>
-	        <div class="form-group">
-	          <label for="message">Message</label>
-	          <textarea name="message" id="message" placeholder="Enter Message"></textarea>
-	        </div>
-	        
-	        <input type="submit" value="Send" class="btn btn-dark" id="send-mail">
-	      </form>
+	    	<!-- Form code under here -->
+	    	<form id="form">
+				   <div id="contact-logo"><img src="./img/contact-logo.jpg"></div>
+				   <div class="field">
+				      <label for="from_name">Name</label>
+				      <input type="text" name="from_name" id="from_name" placeholder="Enter Name">
+				   </div>
+				   <div class="field">
+				      <label for="user_email">Email</label>
+				      <input type="email" name="user_email" id="user_email" placeholder="Enter Email">
+				   </div>
+				   <div class="field">
+				      <label for="organisation">Company</label>
+				      <input type="company-name" name="organisation" id="organisation" placeholder="Enter Company/Organisation name">
+				   </div>
+				   <div class="field">
+				      <label for="phone_number">Phone Number</label>
+				      <input type="number" name="phone_number" id="phone_number" placeholder="Enter Phone Number">
+				   </div>
+				   <div class="field">
+				      <label for="message">Message</label>
+				      <textarea name="message" id="message" placeholder="Enter Message"></textarea>
+				   </div>
+				   <input type="submit" value="Send" class="btn btn-dark" id="send-mail">
+				</form>
+
+	      <!-- Email JS Scripts -->
+	      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+				<script type="text/javascript">
+				  emailjs.init('XONwKMaWWBkLqtw9R')
+				</script>
+
 	    </div>
     
 
@@ -128,7 +130,7 @@
       <div id="contact-home-right">
         <div class="contact-home-object">
           <i class="fas fa-mobile-alt"></i>
-          <p>+44(0)759112233</p>
+          <p>0203 576 0350</p>
         </div>
         <div class="contact-home-object">
           <i class="fas fa-at"></i>
@@ -136,7 +138,7 @@
         </div>
         <div class="contact-home-object">
           <i class="fab fa-linkedin"></i>
-          <p><a href="https://www.linkedin.com/company/oakclinical">Stay Connected</a></p>
+          <p><a href="https://www.linkedin.com/company/oak-clinical-solutions-ltd/about/?viewAsMember=true">Stay Connected</a></p>
         </div> 
       </div>
     </div>
@@ -145,28 +147,49 @@
 
    <!-- Local JS File -->
   <script>
-		const sendButton = document.querySelector('#send-mail')
-	  sendButton.addEventListener('click', () => {
-		  let name = document.querySelector('#name')
-		  let email = document.querySelector('#email')
-		  let phone = document.querySelector('#phone')
-		  let message = document.querySelector('#message')
-		  let companyName = document.querySelector('#company-name')
+		// const sendButton = document.querySelector('#send-mail')
+	 //  sendButton.addEventListener('click', () => {
+		//   let name = document.querySelector('#name')
+		//   let email = document.querySelector('#email')
+		//   let phone = document.querySelector('#phone')
+		//   let message = document.querySelector('#message')
+		//   let companyName = document.querySelector('#company-name')
 
-		  if (name.value != "" && email.value != "" && phone.value != "" && message.value != "" && companyName.value != "") {
-		    let body = `
-		      Name: ${name.value} 
-		      Email: ${email.value}
-		      Phone: ${phone.value}
-		      Organisation: ${companyName.value}
-		      Message: "${message.value} " 
-		    `
-		    window.location = `mailto:info@oakclinicalsolutions.com?body=${body}`;
-		    name.value = "", email.value="", phone.value="", message.value="", companyName.value = ""
-		  } else {
-		    alert("All fields must be filled")
-		  }
-		})
+		//   if (name.value != "" && email.value != "" && phone.value != "" && message.value != "" && companyName.value != "") {
+		//     let body = `
+		//       Name: ${name.value} 
+		//       Email: ${email.value}
+		//       Phone: ${phone.value}
+		//       Organisation: ${companyName.value}
+		//       Message: "${message.value} " 
+		//     `
+		//     window.location = `mailto:info@oakclinicalsolutions.com?body=${body}`;
+		//     name.value = "", email.value="", phone.value="", message.value="", companyName.value = ""
+		//   } else {
+		//     alert("All fields must be filled")
+		//   }
+		// })
+
+		const btn = document.getElementById('send-mail');
+
+		document.getElementById('form')
+		 .addEventListener('submit', function(event) {
+		   event.preventDefault();
+
+		   btn.value = 'Sending...';
+
+		   const serviceID = 'default_service';
+		   const templateID = 'template_avqbko9';
+
+		   emailjs.sendForm(serviceID, templateID, this)
+		    .then(() => {
+		      btn.value = 'Send Email';
+		      alert('Sent!');
+		    }, (err) => {
+		      btn.value = 'Send Email';
+		      alert(JSON.stringify(err));
+		    });
+		});
 
   </script>
 </body>
